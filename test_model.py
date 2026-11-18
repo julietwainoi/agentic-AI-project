@@ -8,7 +8,7 @@ model = OllamaModel(model_id="llama3.2:1b", host="http://localhost:11434")
 agent = Agent(model=model)
 
 # Simple quiz question to test model
-question = "What is 2 + 2?"
+question = input("Enter your Question: ")
 
 print(f"Question: {question}")
 print("Asking the model...\n")
@@ -16,3 +16,4 @@ print("Asking the model...\n")
 response = agent(question)
 
 print(f"Model response: {response}")
+
